@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.bg-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("img/bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-blend-mode: darken;
+  height: 100vh;
+  width: 100vw;
+}
+.banner {
+  padding: 8%;
+  color: #ffffff;
+}
+
+/* Navbar Section Start */
+ul.navbar-nav li.nav-item a.nav-link {
+  transition: all 0.4s;
+}
+ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #2d94fc;
+}
+.navbar .container {
+  border-bottom: 1px solid rgba(107, 106, 106, 0.6);
+  padding: 5px;
+}
+/* Navbar Section End */
+
+/* Homepage Section Start */
+.banner h1 {
+  font-family: "Courier New", Courier, monospace;
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+}
+.banner h3 {
+  font-family: "Courier New", Courier, monospace;
+}
+.banner p {
+  font-family: "Courier New", Courier, monospace;
+}
+.banner a {
+  font-family: "Courier New", Courier, monospace;
+}
+.banner a.btn {
+  height: 40px;
+  width: 125px;
+  padding: 7px;
+  background-color: #0097a7;
+}
+/* Homepage Section End */
+/* Bottom Curved Shape Start*/
+.custom-shape-divider-bottom-1680165876 {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1680165876 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 130px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1680165876 .shape-fill {
+  fill: #ffffff;
+}
+
+/* Bottom Curved Shape End*/
+/* How To Use Section Start */
+.container .row .section-head h4 {
+  font-family: "Courier New", Courier, monospace;
+  color: #0097a7;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.item {
+  margin: 5px;
+  padding: 30px 25px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(247, 242, 242, 0.7);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border: 5px solid rgba(241, 239, 239, 0.7);
+}
+.item:hover {
+  background: #0097a7;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.item:hover .item,
+.item:hover span.icon {
+  background: #0097a7;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.item:hover h6,
+.item:hover p {
+  color: #fff;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+/* How To Use Section End */
