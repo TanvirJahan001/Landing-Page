@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
 }
+
 .bg-img {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("img/bg.jpg");
   background-size: cover;
   background-position: center bottom;
   background-blend-mode: darken;
-  height: 100vh;
+  height: 97vh;
   width: 100vw;
+  overflow: hidden;
 }
 .banner {
   padding: 8%;
@@ -53,9 +55,9 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 /* Bottom Curved Shape Start*/
 .custom-shape-divider-bottom-1680165876 {
   position: absolute;
-  bottom: -17px;
-  left: 0;
-  width: 100%;
+  bottom: 0px;
+  left: -15px;
+  width: 110%;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
@@ -72,7 +74,16 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 .custom-shape-divider-bottom-1680165876 .shape-fill {
   fill: #ffffff;
 }
-
+.fa-solid {
+  counter-reset: #0097a7;
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 110px;
+  z-index: 10;
+  bottom: 112px;
+}
 /* Bottom Curved Shape End*/
 /* How To Use Section Start */
 .container .row .section-head h4 {
@@ -112,3 +123,101 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   transition: all 0.5s ease 0s;
 }
 /* How To Use Section End */
+
+/* Pricing Section Start */
+.card-header {
+  height: 120px;
+  background-color: #ffffff;
+  border: none;
+}
+.card-header h3 {
+  color: #0097a7;
+  border-bottom: 1px solid rgba(107, 106, 106, 0.6);
+  padding: 30px;
+}
+.middel-card {
+  background-color: #0097a7;
+}
+.middel-card > h3 {
+  color: #ffffff;
+}
+.col {
+  width: 300px;
+  height: 250px;
+  margin-left: 6%;
+}
+/* Pricing Section End */
+
+/* Download App Section Start */
+/* Download App Section End */
+
+/* Contact Section Start */
+.contact {
+  background-color: #0097a7;
+  border-radius: 10px;
+  height: 120px;
+}
+.search {
+  margin-bottom: auto;
+  margin-top: 200px;
+  height: 70px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.search-input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  margin-top: 5px;
+  caret-color: transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.search .search-input {
+  padding: 0 10px;
+  width: 550px;
+  caret-color: #536bf6;
+  font-size: 21px;
+  font-weight: 300;
+  color: black;
+  transition: width 0.4s linear;
+}
+
+.search:hover > .search-icon {
+  background: #1a237e;
+  color: #fff;
+}
+.search-icon {
+  height: 50px;
+  width: 50px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #536bf6;
+}
+a:link {
+  text-decoration: none;
+}
+
+/* Contact Section Start */
+
+/* Responsive Section Start */
+@media screen and (max-width: 1200px) {
+  .custom-shape-divider-bottom-1680165876 {
+    left: -50px;
+    width: 125%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .custom-shape-divider-bottom-1680165876 {
+    left: -80px;
+    width: 130%;
+  }
+}
+/* Responsive Section End */
