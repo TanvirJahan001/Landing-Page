@@ -7,13 +7,14 @@ body {
 }
 .bg-img {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("img/bg.jpg");
+    url("img/BG.png");
   background-size: cover;
   background-position: center bottom;
   background-blend-mode: darken;
-  height: 100vh;
+  height: 97vh;
   width: 100vw;
   overflow: hidden;
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 90% 69%, 0% 100%);
 }
 .banner {
   padding: 8%;
@@ -21,6 +22,10 @@ body {
 }
 
 /* Navbar Section Start */
+.nav-logo {
+  height: 64px;
+  width: 62px;
+}
 ul.navbar-nav li.nav-item a.nav-link {
   transition: all 0.4s;
 }
@@ -35,17 +40,17 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 
 /* Homepage Section Start */
 .banner h1 {
-  font-family: "Courier New", Courier, monospace;
-  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  font-family: "Inter", sans-serif;
+  /* clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%); */
 }
 .banner h3 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Inter", sans-serif;
 }
 .banner p {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Inter", sans-serif;
 }
 .banner a {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Inter", sans-serif;
 }
 .banner a.btn {
   height: 40px;
@@ -53,43 +58,19 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   padding: 7px;
   background-color: #0097a7;
 }
+.cr-logo {
+  position: absolute;
+  bottom: 163px;
+  right: 80px;
+  z-index: 1008;
+  height: 70px;
+  width: 85px;
+}
 /* Homepage Section End */
-/* Bottom Curved Shape Start*/
-.custom-shape-divider-bottom-1680165876 {
-  position: absolute;
-  bottom: 0px;
-  left: -150px;
-  width: 120%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
 
-.custom-shape-divider-bottom-1680165876 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 130px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1680165876 .shape-fill {
-  fill: #ffffff;
-}
-.fa-solid {
-  counter-reset: #0097a7;
-  background-color: #fff;
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  right: 110px;
-  z-index: 10;
-  bottom: 112px;
-}
-/* Bottom Curved Shape End*/
 /* How To Use Section Start */
 .container .row .section-head h4 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Inter", sans-serif;
   color: #0097a7;
   font-weight: bolder;
   font-size: 35px;
@@ -148,9 +129,32 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   height: 250px;
   margin-left: 6%;
 }
+.btn-primary {
+  background-color: #085c65;
+}
+.price-btn {
+  height: 50px;
+  width: 160px;
+}
 /* Pricing Section End */
 
+/* Partner Section Start */
+.container .row h4 {
+  font-family: "Inter", sans-serif;
+  color: #0097a7;
+  font-weight: bolder;
+  font-size: 35px;
+}
+/* Partner Section End */
+
 /* Download App Section Start */
+.app-img {
+  position: relative;
+  right: 160px;
+  height: 550px;
+  width: 750px;
+}
+
 /* Download App Section End */
 
 /* Contact Section Start */
@@ -159,52 +163,49 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   border-radius: 10px;
   height: 120px;
 }
-.search {
-  margin-bottom: auto;
-  margin-top: 200px;
-  height: 70px;
-  background-color: #fff;
-  padding: 10px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
 
-.search-input {
-  color: white;
-  border: 0;
-  outline: 0;
-  background: none;
-  width: 0;
-  margin-top: 5px;
-  caret-color: transparent;
-  line-height: 40px;
-  transition: width 0.4s linear;
-}
-
-.search .search-input {
-  padding: 0 10px;
-  width: 550px;
-  caret-color: #536bf6;
-  font-size: 21px;
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
-  color: black;
-  transition: width 0.4s linear;
 }
 
-.search:hover > .search-icon {
-  background: #1a237e;
-  color: #fff;
+.height {
+  height: 100vh;
 }
-.search-icon {
+
+.search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+}
+
+.search input {
+  height: 60px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+  border-radius: 50px;
+}
+
+.search input:focus {
+  box-shadow: none;
+  border: 2px solid blue;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+}
+
+.search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
   height: 50px;
-  width: 50px;
-  float: right;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #536bf6;
-}
-a:link {
-  text-decoration: none;
+  width: 110px;
+  background: #0097a7;
+  border-radius: 50px;
 }
 
 /* Contact Section Start */
